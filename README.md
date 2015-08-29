@@ -1,13 +1,12 @@
-# otouto
+# HALIX 9000
 
-The plugin-wielding, multi-purpose Telegram bot.
+A multipurpose Telegram bot based on plugins run by the @LibreLabucm association.
 
-Public bot runs on [@mokubot](http://telegram.me/mokubot).
+<!--You can contact it trough its username [@Halix9000Bot](http://telegram.me/Halix9000Bot).-->
 
-To start, send "/start" or say "Hello, otouto."
+It's based on [mokubot](https://github.com/topkecleon/otouto) which, in turn, is based on the old [telegram-bot repo](https://github.com/yagop/telegram-bot/).
 
-
-##Plugins
+## Bot Commands
 
 <table>
   <thead>
@@ -159,7 +158,7 @@ To start, send "/start" or say "Hello, otouto."
   </tbody>
 </table>
 
-
+<!--
 ##Setup
 
 Requires Lua, lua-socket and lua-sec. [dkjson](http://github.com/LuaDist/dkjson/) is provided. Written for Lua 5.2 but will probably run on 5.3.
@@ -191,9 +190,8 @@ To run:
 
 `lua bot.lua`
 
+-->
 
 ##Support
 
-Do not private message me for support.
-
-For support for otouto as well as general Lua and bot assistance, please join the [CIS Bot Development](http://telegram.me/joinchat/05fe39f500f8f1b2d1548147a68acd2a) group. After you read the rules and the pastebin, I will assist you there.
+Just use the github capabilities. We're working on a better support service directly built into the bot.
