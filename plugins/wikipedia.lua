@@ -1,10 +1,11 @@
 local doc = [[
-	/wiki <topic>
+	/wiki <topic> or just /w <topic>
 	Search Wikipedia for a relevant article and return its summary.
 ]]
 
 local triggers = {
 	'^/wiki',
+	'^/wikipedia',
 	'^/w '
 }
 

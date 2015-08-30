@@ -7,7 +7,6 @@ PLUGIN.doc = [[
 
 PLUGIN.triggers = {
 	'^/whoami',
-	'^/ping',
 	'^/who$'
 }
 

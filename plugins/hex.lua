@@ -1,8 +1,8 @@
 local PLUGIN = {}
 
 PLUGIN.doc = [[
-	/hex <number>
-	This function converts a number to or from hexadecimal.
+	/hex <number> or /hex <0xhexnumber>
+	This function converts a number to (firt case) or from hexadecimal (second case).
 ]]
 
 PLUGIN.triggers = {

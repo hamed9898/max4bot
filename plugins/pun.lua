@@ -2,7 +2,7 @@ local PLUGIN = {}
 
 PLUGIN.doc = [[
 	/pun
-	Get a random pun.
+	Get a random pun joke.
 	Have a recommendation? PM @topkecleon.
 ]]
 

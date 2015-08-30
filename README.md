@@ -1,6 +1,6 @@
 # HALIX 9000
 
-A multipurpose Telegram bot based on plugins run by the @LibreLabucm association.
+A multipurpose Telegram bot run by the @LibreLabucm association. Services are provided in separated plugins.
 
 <!--You can contact it trough its username [@Halix9000Bot](http://telegram.me/Halix9000Bot).-->
 

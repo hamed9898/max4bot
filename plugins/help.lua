@@ -31,14 +31,7 @@ function PLUGIN.action(msg)
 		*Arguments: <required> [optional]
 	]]
 
-	if msg.from.id ~= msg.chat.id then
-		if not send_message(msg.from.id, message, true, msg.message_id) then
-			return send_msg(msg, message) -- Unable to PM user who hasn't PM'd first.
-		end
-		return send_msg(msg, 'I have sent you the requested information in a private message.')
-	else
-		return send_msg(msg, message)
-	end
+	return send_msg(msg, message)
 
 end
 

@@ -1,7 +1,7 @@
 local PLUGIN = {}
 
 PLUGIN.doc = [[
-	/ud <term>
+	/urban <term>
 	Returns the first definition for a given term from Urban Dictionary.
 ]]
 

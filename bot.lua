@@ -4,6 +4,7 @@ URL  = require('socket.url')
 JSON = require('dkjson')
 
 VERSION = 2.9
+HAL_VERSION = '9002.0'
 
 function on_msg_receive(msg)
 

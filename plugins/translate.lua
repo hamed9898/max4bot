@@ -3,11 +3,12 @@
  local PLUGIN = {}
 
  PLUGIN.triggers = {
-	'^/translate'
+	'^/translate',
+	'^/trans'
 }
 
 PLUGIN.doc = [[
-	/translate [target lang]
+	/translate [target lang] or /trans [target lang]
 	Reply to a message to translate it to the default language.
 ]]
 
