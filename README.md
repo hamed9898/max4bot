@@ -1,12 +1,12 @@
 # HALIX 9000
 
-A multipurpose Telegram bot based on plugins run by the @LibreLabucm association.
+A multipurpose Telegram bot run by the [LibreLabUCM](https://github.com/LibreLabUCM) association. Services are provided in separated plugins.
 
 <!--You can contact it trough its username [@Halix9000Bot](http://telegram.me/Halix9000Bot).-->
 
 It's based on [mokubot](https://github.com/topkecleon/otouto) which, in turn, is based on the old [telegram-bot repo](https://github.com/yagop/telegram-bot/).
 
-## Bot Commands
+## Enabled Bot Commands
 
 <table>
   <thead>
@@ -96,29 +96,9 @@ It's based on [mokubot](https://github.com/topkecleon/otouto) which, in turn, is
       <td>Magic 8-ball</td>
     </tr>
     <tr>
-      <td>bandersnatch.lua</td>
-      <td>/bandersnatch</td>
-      <td>Benedict Cumberbatch name generator</td>
-    </tr>
-    <tr>
-      <td>bible.lua</td>
-      <td>/bible &lt;verse&gt;</td>
-      <td>King James Version</td>
-    </tr>
-    <tr>
       <td>btc.lua</td>
       <td>/btc &lt;currency&gt; [amount]</td>
       <td>Bitcoin prices and conversion</td>
-    </tr>
-    <tr>
-      <td>commit.lua</td>
-      <td>/commit</td>
-      <td>http://whatthecommit.com</td>
-    </tr>
-    <tr>
-      <td>dogify.lua</td>
-      <td>/dogify &lt;lines/separatedby/slashes&gt;</td>
-      <td>Create a doge image</td>
     </tr>
     <tr>
       <td>echo.lua</td>
@@ -136,19 +116,9 @@ It's based on [mokubot](https://github.com/topkecleon/otouto) which, in turn, is
       <td>Convert to and from hexadecimal</td>
     </tr>
     <tr>
-      <td>pokedex.lua</td>
-      <td>/dex &lt;pokemon&gt;</td>
-      <td>Pokedex!</td>
-    </tr>
-    <tr>
       <td>pun.lua</td>
       <td>/pun</td>
       <td>Puns</td>
-    </tr>
-    <tr>
-      <td>slap.lua</td>
-      <td>/slap [victim]</td>
-      <td>Slap someone!</td>
     </tr>
     <tr>
       <td>whoami.lua</td>
