@@ -14,13 +14,13 @@ PLUGIN.triggers = {
 
 function PLUGIN.action(msg)
 
-	local url = 'http://ajax.googleapis.com/ajax/services/search/web?v=1.0'
+	local url = 'https://ajax.googleapis.com/ajax/services/search/web?v=1.0'
 
 	if not string.match(msg.text, '^/gnsfw ') then
 		url = url .. '&safe=active'
 	end
 
-	if not msg.chat.title then
+	if not msg.chat.title then -- if it's an individual chat, give 8 results
 		url = url .. '&rsz=8'
 	end
 
@@ -36,7 +36,7 @@ function PLUGIN.action(msg)
 
 	url = url .. '&q=' .. URL.escape(input)
 
-	local jstr, res = HTTP.request(url)
+	local jstr, res = HTTPS.request(url)
 
 	if res ~= 200 then
 		return send_msg(msg, config.locale.errors.connection)

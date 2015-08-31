@@ -22,7 +22,7 @@ PLUGIN.exts = {
 
 function PLUGIN.action(msg)
 
-	local url = 'http://ajax.googleapis.com/ajax/services/search/images?v=1.0&rsz=8&safe=active'
+	local url = 'https://ajax.googleapis.com/ajax/services/search/images?v=1.0&rsz=8&safe=active'
 
 	local input = get_input(msg.text)
 	if not input then
@@ -36,7 +36,7 @@ function PLUGIN.action(msg)
 
 	url = url .. '&q=' .. URL.escape(input)
 
-	local jstr, res = HTTP.request(url)
+	local jstr, res = HTTPS.request(url)
 
 	if res ~= 200 then
 		send_msg(msg, config.locale.errors.connection)
