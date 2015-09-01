@@ -171,3 +171,5 @@ Just use the github capabilities. We're working on a better support service dire
 Thanks to [yagop](https://github.com/yagop/) for starting [telegram-bot](https://github.com/yagop/telegram-bot), the seed of this project, and to all the contributors to that project, [even someone from our association](https://github.com/yagop/telegram-bot/commits?author=DevPGSV).
 
 Futhermore, thanks to [mokubot](https://github.com/topkecleon/otouto) for porting telegram-bot to the new [API Telegram bot](https://core.telegram.org/bots).
+
+![Lua logo](http://www.lua.org/images/powered-by-lua.gif)
