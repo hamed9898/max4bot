@@ -12,9 +12,9 @@ It's based on [mokubot](https://github.com/topkecleon/otouto) which, in turn, is
 <table>
   <thead>
     <tr>
-      <td>help.lua</td>
-      <td>/help [command]</td>
-      <td>List commands</td>
+      <td>8ball.lua</td>
+      <td>/8ball</td>
+      <td>Magic 8-ball</td>
     </tr>
     <tr>
       <td>about.lua</td>
@@ -22,84 +22,19 @@ It's based on [mokubot](https://github.com/topkecleon/otouto) which, in turn, is
       <td>Information about the bot</td>
     </tr>
     <tr>
-      <td>gSearch.lua</td>
-      <td>/google &lt;query&gt;</td>
-      <td>Google Search</td>
-    </tr>
-    <tr>
-      <td>gImages.lua</td>
-      <td>/images &lt;query&gt;</td>
-      <td>Google Images search</td>
-    </tr>
-    <tr>
-      <td>reddit.lua</td>
-      <td>/reddit [r/subreddit | query]</td>
-      <td>Posts from reddit</td>
-    </tr>
-    <tr>
-      <td>giphy.lua</td>
-      <td>/giphy [query]</td>
-      <td>Giphy search or random</td>
-    </tr>
-    <tr>
-      <td>xkcd.lua</td>
-      <td>/xkcd [search]</td>
-      <td>xkcd strips and alt text</td>
-    </tr>
-    <tr>
-      <td>gMaps.lua</td>
-      <td>/loc &lt;location&gt;</td>
-      <td>Google Maps search</td>
-    </tr>
-    <tr>
-      <td>imdb.lua</td>
-      <td>/imdb &lt;movie | TV series&gt;</td>
-      <td>IMDb movie/television info</td>
-    </tr>
-    <tr>
-      <td>urbandictionary.lua</td>
-      <td>/ud &lt;term&gt;</td>
-      <td>Urban Dictionary search</td>
-    </tr>
-    <tr>
-      <td>hackernews.lua</td>
-      <td>/hackernews</td>
-      <td>Top stories from Hackernews</td>
-    </tr>
-    <tr>
-      <td>time.lua</td>
-      <td>/time &lt;location&gt;</td>
-      <td>Get the time for a place</td>
-    </tr>
-    <tr>
-      <td>weather.lua</td>
-      <td>/weather &lt;location&gt;</td>
-      <td>Get the weather for a place</td>
-    </tr>
-    <tr>
       <td>calc.lua</td>
       <td>/calc &lt;expression&gt;</td>
       <td>Solve math expression and convert units</td>
     </tr>
     <tr>
+      <td>currency.lua</td>
+      <td>/cash &lt;from&gt; &lt;to&gt; [amount]</td>
+      <td>Convert an amount from one currency to another.</td>
+    </tr>
+    <tr>
       <td>dice.lua</td>
       <td>/roll [arg]</td>
       <td>Roll a die. Accepts D&amp;D notation</td>
-    </tr>
-    <tr>
-      <td>remind.lua</td>
-      <td>/remind &lt;delay&gt; &lt;message&gt;</td>
-      <td>Set a reminder for yourself or a group</td>
-    </tr>
-    <tr>
-      <td>8ball.lua</td>
-      <td>/8ball</td>
-      <td>Magic 8-ball</td>
-    </tr>
-    <tr>
-      <td>btc.lua</td>
-      <td>/btc &lt;currency&gt; [amount]</td>
-      <td>Bitcoin prices and conversion</td>
     </tr>
     <tr>
       <td>echo.lua</td>
@@ -112,19 +47,79 @@ It's based on [mokubot](https://github.com/topkecleon/otouto) which, in turn, is
       <td>Random fortunes</td>
     </tr>
     <tr>
+      <td>gImages.lua</td>
+      <td>/images &lt;query&gt;</td>
+      <td>Google Images search</td>
+    </tr>
+    <tr>
+      <td>gMaps.lua</td>
+      <td>/loc &lt;location&gt;</td>
+      <td>Google Maps search</td>
+    </tr>
+    <tr>
+      <td>gSearch.lua</td>
+      <td>/google &lt;query&gt;</td>
+      <td>Google Search</td>
+    </tr>
+    <tr>
+      <td>giphy.lua</td>
+      <td>/giphy [query]</td>
+      <td>Giphy search or random</td>
+    </tr>
+    <tr>
+      <td>hackernews.lua</td>
+      <td>/hackernews</td>
+      <td>Top stories from Hackernews</td>
+    </tr>
+    <tr>
+      <td>help.lua</td>
+      <td>/help [command]</td>
+      <td>List commands</td>
+    </tr>
+    <tr>
       <td>hex.lua</td>
       <td>/hex &lt;number&gt;</td>
       <td>Convert to and from hexadecimal</td>
     </tr>
     <tr>
-      <td>pun.lua</td>
-      <td>/pun</td>
-      <td>Puns</td>
+      <td>imdb.lua</td>
+      <td>/imdb &lt;movie | TV series&gt;</td>
+      <td>IMDb movie/television info</td>
+    </tr>
+    <tr>
+      <td>reddit.lua</td>
+      <td>/reddit [r/subreddit | query]</td>
+      <td>Posts from reddit</td>
+    </tr>
+    <tr>
+      <td>weather.lua</td>
+      <td>/weather &lt;location&gt;</td>
+      <td>Get the weather for a place</td>
+    </tr>
+    <tr>
+      <td>remind.lua</td>
+      <td>/remind &lt;delay&gt; &lt;message&gt;</td>
+      <td>Set a reminder for yourself or a group</td>
+    </tr>
+    <tr>
+      <td>time.lua</td>
+      <td>/time &lt;location&gt;</td>
+      <td>Get the time for a place</td>
     </tr>
     <tr>
       <td>whoami.lua</td>
       <td>/who</td>
       <td>Get user and group IDs</td>
+    </tr>
+    <tr>
+      <td>wiki.lua</td>
+      <td>/wiki</td>
+      <td>Search Wikipedia for a relevant article and return its summary</td>
+    </tr>
+    <tr>
+      <td>xkcd.lua</td>
+      <td>/xkcd [search]</td>
+      <td>xkcd strips and alt text</td>
     </tr>
   </tbody>
 </table>
