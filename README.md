@@ -121,6 +121,11 @@ It's based on [mokubot](https://github.com/topkecleon/otouto) which, in turn, is
       <td>Puns</td>
     </tr>
     <tr>
+      <td>rae.lua</td>
+      <td>/rae</td>
+      <td>Search words in Spanish dictionary</td>
+    </tr>
+    <tr>
       <td>whoami.lua</td>
       <td>/who</td>
       <td>Get user and group IDs</td>
