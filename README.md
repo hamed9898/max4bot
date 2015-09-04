@@ -1,11 +1,11 @@
 # HALIX 9000
 [![License](http://img.shields.io/:license-gpl-blue.svg?style=flat)](http://opensource.org/licenses/GPL-2.0)
 
-A multipurpose Telegram bot run by the [LibreLabUCM](https://github.com/LibreLabUCM) association. Services are provided in separated plugins.
+A multipurpose Telegram bot run by the [LibreLabUCM](https://github.com/LibreLabUCM) association. Services are provided by different plugins.
 
 <!--You can contact it trough its username [@Halix9000Bot](http://telegram.me/Halix9000Bot).-->
 
-It's based on [mokubot](https://github.com/topkecleon/otouto) which, in turn, is based on the old [telegram-bot repo](https://github.com/yagop/telegram-bot/).
+It's based on [otouto](https://github.com/topkecleon/otouto).
 
 ## Enabled Bot Commands
 
@@ -138,7 +138,6 @@ Requires Lua, lua-socket and lua-sec. [dkjson](http://github.com/LuaDist/dkjson/
 
 You must have a Telegram bot and auth token from the [BotFather](http://telegram.me/botfather) to run this bot. telegram-cli is not required.
 
-<!--
 ###Configuration
 
 To begin, copy config.lua.default to config.lua and add the relevant information.
@@ -164,11 +163,12 @@ To run:
 
 `lua bot.lua`
 
--->
-
 ##Thanks
-Thanks to [yagop](https://github.com/yagop/) for starting [telegram-bot](https://github.com/yagop/telegram-bot), the seed of this project, and to all the contributors to that project, [even someone from our association](https://github.com/yagop/telegram-bot/commits?author=DevPGSV).
 
-Futhermore, thanks to [mokubot](https://github.com/topkecleon/otouto) for porting telegram-bot to the new [API Telegram bot](https://core.telegram.org/bots).
+Thanks to [@topkecleon](https://github.com/topkecleon/) for developing this awesome bot.
+
+Also, thanks to [@yagop](https://github.com/yagop/) for starting  [telegram-bot](https://github.com/yagop/telegram-bot), first codebase of HALIX 9000.
+
+Finally, thanks to the Telegram guys, for making all this magic possible.
 
 ![Lua logo](http://www.lua.org/images/powered-by-lua.gif)
