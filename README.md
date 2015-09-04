@@ -1,7 +1,10 @@
-# HALIX 9000
+# HALIX 9002
 [![License](http://img.shields.io/:license-gpl-blue.svg?style=flat)](http://opensource.org/licenses/GPL-2.0)
 
-A multipurpose Telegram bot run by the [LibreLabUCM](https://github.com/LibreLabUCM) association. Services are provided by different plugins.
+A multipurpose Telegram bot run by the [LibreLabUCM](https://github.com/LibreLabUCM) association.
+Services are provided by different plugins.
+
+Currently, HALIX is in version 9002 but it's still under development and is not publicly available.
 
 <!--You can contact it trough its username [@Halix9000Bot](http://telegram.me/Halix9000Bot).-->
 
@@ -167,7 +170,7 @@ To run:
 
 Thanks to [@topkecleon](https://github.com/topkecleon/) for developing this awesome bot.
 
-Also, thanks to [@yagop](https://github.com/yagop/) for starting  [telegram-bot](https://github.com/yagop/telegram-bot), first codebase of HALIX 9000.
+Also, thanks to [@yagop](https://github.com/yagop/) for starting  [telegram-bot](https://github.com/LibreLabUCM/telegram-bot), first codebase of HALIX 9000 (old) and of [HALIX 9001](https://telegram.me/HALIX_9001) (still running).
 
 Finally, thanks to the Telegram guys, for making all this magic possible.
 
