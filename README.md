@@ -90,19 +90,14 @@ It's based on [otouto](https://github.com/topkecleon/otouto).
       <td>IMDb movie/television info</td>
     </tr>
     <tr>
-      <td>reddit.lua</td>
-      <td>/reddit [r/subreddit | query]</td>
-      <td>Posts from reddit</td>
-    </tr>
-    <tr>
-      <td>weather.lua</td>
-      <td>/weather &lt;location&gt;</td>
-      <td>Get the weather for a place</td>
-    </tr>
-    <tr>
       <td>rae.lua</td>
       <td>/rae</td>
       <td>Search words in Spanish dictionary</td>
+    </tr>
+    <tr>
+      <td>reddit.lua</td>
+      <td>/reddit [r/subreddit | query]</td>
+      <td>Posts from reddit</td>
     </tr>
     <tr>
       <td>remind.lua</td>
@@ -113,6 +108,11 @@ It's based on [otouto](https://github.com/topkecleon/otouto).
       <td>time.lua</td>
       <td>/time &lt;location&gt;</td>
       <td>Get the time for a place</td>
+    </tr>
+    <tr>
+      <td>weather.lua</td>
+      <td>/weather &lt;location&gt;</td>
+      <td>Get the weather for a place</td>
     </tr>
     <tr>
       <td>whoami.lua</td>
