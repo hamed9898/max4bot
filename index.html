@@ -5,7 +5,7 @@
     <title>otouto by topkecleon</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
@@ -22,199 +22,520 @@
       <h1>
 <a id="otouto" class="anchor" href="#otouto" aria-hidden="true"><span class="octicon octicon-link"></span></a>otouto</h1>
 
-<p>The plugin-wielding, multi-purpose Telegram bot.</p>
+<p>The plugin-wielding, multipurpose Telegram bot.</p>
 
-<p>Public bot runs on <a href="http://telegram.me/mokubot">@mokubot</a>.</p>
+<p>The public bot runs on <a href="https://telegram.me/otouto">@mokubot</a>.</p>
+
+<p>otouto is licensed under the GNU General Public License. A copy of the license has been included in <a href="https://github.com/topkecleon/otouto/blob/master/LICENSE">LICENSE</a>.</p>
+
+<h2>
+<a id="what-is-it" class="anchor" href="#what-is-it" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is it?</h2>
+
+<p>otouto is an independently-developed Telegram API bot written in Lua. otouto was created in February 2015, open-sourced in June, and is being augmented to this day.</p>
+
+<p>Bot commands and functions use a comprehensive plugin system, similar to that of (yagop's telegram-bot)[github.com/yagop/telegram-bot]. The aim of the project is to host every desirable feature in one bot.</p>
 
 <h2>
 <a id="plugins" class="anchor" href="#plugins" aria-hidden="true"><span class="octicon octicon-link"></span></a>Plugins</h2>
 
-<table>
-  <thead>
-  <tr>
-      <td>about.lua</td>
-      <td>/about</td>
-      <td>Information about the bot</td>
-    </tr>
-    <tr>
-      <td>8ball.lua</td>
-      <td>/8ball</td>
-      <td>Magic 8-ball</td>
-    </tr>
-    <tr>
-      <td>bandersnatch.lua</td>
-      <td>/bandersnatch</td>
-      <td>Benedict Cumberbatch name generator</td>
-    </tr>
-    <tr>
-      <td>bible.lua</td>
-      <td>/bible &lt;verse&gt;</td>
-      <td>King James Version</td>
-    </tr>
-    <tr>
-      <td>btc.lua</td>
-      <td>/btc &lt;currency&gt; [amount]</td>
-      <td>Bitcoin prices and conversion</td>
-    </tr>
-    <tr>
-      <td>calc.lua</td>
-      <td>/calc &lt;expression&gt;</td>
-      <td>Solve math expression and convert units</td>
-    </tr>
-    <tr>
-      <td>commit.lua</td>
-      <td>/commit</td>
-      <td>http://whatthecommit.com</td>
-    </tr>
-    <tr>
-      <td>dice.lua</td>
-      <td>/roll [arg]</td>
-      <td>Roll a die. Accepts D&amp;D notation</td>
-    </tr>
-    <tr>
-      <td>dogify.lua</td>
-      <td>/dogify &lt;lines/separatedby/slashes&gt;</td>
-      <td>Create a doge image</td>
-    </tr>
-    <tr>
-      <td>echo.lua</td>
-      <td>/echo &lt;text&gt;</td>
-      <td>Repeat a string</td>
-    </tr>
-    <tr>
-      <td>fortune.lua</td>
-      <td>/fortune</td>
-      <td>Random fortunes</td>
-    </tr>
-    <tr>
-      <td>gSearch.lua</td>
-      <td>/google &lt;query&gt;</td>
-      <td>Google Search</td>
-    </tr>
-    <tr>
-      <td>gMaps.lua</td>
-      <td>/loc &lt;location&gt;</td>
-      <td>Google Maps search</td>
-    </tr>
-    <tr>
-      <td>gImages.lua</td>
-      <td>/images &lt;query&gt;</td>
-      <td>Google Images search</td>
-    </tr>
-    <tr>
-      <td>giphy.lua</td>
-      <td>/giphy [query]</td>
-      <td>Giphy search or random</td>
-    </tr>
-    <tr>
-      <td>hackernews.lua</td>
-      <td>/hackernews</td>
-      <td>Top stories from Hackernews</td>
-    </tr>
-    <tr>
-      <td>help.lua</td>
-      <td>/help [command]</td>
-      <td>List commands</td>
-    </tr>
-    <tr>
-      <td>hex.lua</td>
-      <td>/hex &lt;number&gt;</td>
-      <td>Convert to and from hexadecimal</td>
-    </tr>
-    <tr>
-      <td>imdb.lua</td>
-      <td>/imdb &lt;movie | TV series&gt;</td>
-      <td>IMDb movie/television info</td>
-    </tr>
-    <tr>
-      <td>pokedex.lua</td>
-      <td>/dex &lt;pokemon&gt;</td>
-      <td>Pokedex!</td>
-    </tr>
-    <tr>
-      <td>pun.lua</td>
-      <td>/pun</td>
-      <td>Puns</td>
-    </tr>
-    <tr>
-      <td>reddit.lua</td>
-      <td>/reddit [r/subreddit | query]</td>
-      <td>Posts from reddit</td>
-    </tr>
-    <tr>
-      <td>remind.lua</td>
-      <td>/remind &lt;delay&gt; &lt;message&gt;</td>
-      <td>Set a reminder for yourself or a group</td>
-    </tr>
-    <tr>
-      <td>slap.lua</td>
-      <td>/slap [victim]</td>
-      <td>Slap someone!</td>
-    </tr>
-    <tr>
-      <td>time.lua</td>
-      <td>/time &lt;location&gt;</td>
-      <td>Get the time for a place</td>
-    </tr>
-    <tr>
-      <td>urbandictionary.lua</td>
-      <td>/ud &lt;term&gt;</td>
-      <td>Urban Dictionary search</td>
-    </tr>
-    <tr>
-      <td>weather.lua</td>
-      <td>/weather &lt;location&gt;</td>
-      <td>Get the weather for a place</td>
-    </tr>
-    <tr>
-      <td>whoami.lua</td>
-      <td>/who</td>
-      <td>Get user and group IDs</td>
-    </tr>
-    <tr>
-      <td>xkcd.lua</td>
-      <td>/xkcd [search]</td>
-      <td>xkcd strips and alt text</td>
-    </tr>
-  
-</thead>
-</table>
+<p>Below are listed many (but not all) of otouto's plugins. This list will be updated as more plugins are added.</p>
+
+<h3>
+<a id="echolua" class="anchor" href="#echolua" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>echo.lua</strong>
+</h3>
+
+<blockquote>
+<p><strong>Command:</strong> /echo &lt;text&gt;</p>
+
+<p><strong>Function:</strong> Repeats a string of text.</p>
+
+<p><strong>Notes:</strong> Replaces letters with corresponding characters from the Cyrillic alphabet.</p>
+</blockquote>
+
+<h3>
+<a id="gsearchlua" class="anchor" href="#gsearchlua" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>gSearch.lua</strong>
+</h3>
+
+<blockquote>
+<p><strong>Command:</strong> /google [query]</p>
+
+<p><strong>Function:</strong> Returns four or eight Google results, depending on whether it is run in a group chat or a private message.</p>
+
+<p><strong>Aliases:</strong> /g, /gnsfw, /googlensfw</p>
+
+<p><strong>Notes:</strong> If "nsfw" is appended to the command, Safe Search will not be used.</p>
+</blockquote>
+
+<h3>
+<a id="gimageslua" class="anchor" href="#gimageslua" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>gImages.lua</strong>
+</h3>
+
+<blockquote>
+<p><strong>Command:</strong> /images [query]</p>
+
+<p><strong>Function:</strong> Returns a random top result from Google Image.</p>
+
+<p><strong>Aliases:</strong> /i, /gimages, /gnsfw</p>
+
+<p><strong>Notes:</strong> If "nsfw" is appended to the command, Safe Search and image preview will not be used.</p>
+</blockquote>
+
+<h3>
+<a id="gmapslua" class="anchor" href="#gmapslua" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>gMaps.lua</strong>
+</h3>
+
+<blockquote>
+<p><strong>Command:</strong> /location [query]</p>
+
+<p><strong>Function:</strong> Returns location data from Google Maps.</p>
+
+<p><strong>Aliases:</strong> /loc</p>
+</blockquote>
+
+<h3>
+<a id="translatelua" class="anchor" href="#translatelua" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>translate.lua</strong>
+</h3>
+
+<blockquote>
+<p><strong>Command:</strong> /translate [text]</p>
+
+<p><strong>Function:</strong> Translates the replied-to message or the given string to the configured language.</p>
+</blockquote>
+
+<h3>
+<a id="youtubelua" class="anchor" href="#youtubelua" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>youtube.lua</strong>
+</h3>
+
+<blockquote>
+<p><strong>Command:</strong> /youtube [query]</p>
+
+<p><strong>Function:</strong> Returns the top video result from YouTube.</p>
+
+<p><strong>Aliases:</strong> /yt</p>
+</blockquote>
+
+<h3>
+<a id="wikipedialua" class="anchor" href="#wikipedialua" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>wikipedia.lua</strong>
+</h3>
+
+<blockquote>
+<p><strong>Command:</strong> /wikipedia [query]</p>
+
+<p><strong>Function:</strong> Returns the top paragraph of and the link to a Wikipedia article.</p>
+
+<p><strong>Aliases:</strong> /wiki</p>
+</blockquote>
+
+<h3>
+<a id="lastfmlua" class="anchor" href="#lastfmlua" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>lastfm.lua</strong>
+</h3>
+
+<blockquote>
+<p><strong>Command:</strong> /lastfm</p>
+
+<p><strong>Function</strong>: Returns help for the last.fm actions.</p>
+
+<p><strong>Actions</strong>:</p>
+
+<blockquote>
+<p><strong>/np</strong> [username]</p>
+
+<p>Returns the current- or last-played song for the given username. If no username is given, it will use your configured last.fm username or your Telegram username.</p>
+
+<p><strong>/fmset</strong> &lt;username&gt;</p>
+
+<p>Sets your last.fm username. Use /fmset - to delete it.</p>
+</blockquote>
+</blockquote>
+
+<h3>
+<a id="hackernewslua" class="anchor" href="#hackernewslua" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>hackernews.lua</strong>
+</h3>
+
+<blockquote>
+<p><strong>Command:</strong> /hackernews</p>
+
+<p><strong>Function:</strong> Returns the top four or eight headlines on Hacker News, depending on whether it is run in a group chat or private message.</p>
+
+<p><strong>Aliases:</strong> /hn</p>
+</blockquote>
+
+<h3>
+<a id="imdblua" class="anchor" href="#imdblua" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>imdb.lua</strong>
+</h3>
+
+<blockquote>
+<p><strong>Command:</strong> /imdb &lt;query&gt;</p>
+
+<p><strong>Function:</strong> Returns movie information from IMDb.</p>
+</blockquote>
+
+<h3>
+<a id="calclua" class="anchor" href="#calclua" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>calc.lua</strong>
+</h3>
+
+<blockquote>
+<p><strong>Command:</strong> /calc &lt;expression&gt;</p>
+
+<p><strong>Function:</strong> Returns solutions to mathematical expressions and conversions between common units. Results provided by mathjs.org.</p>
+</blockquote>
+
+<h3>
+<a id="biblelua" class="anchor" href="#biblelua" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>bible.lua</strong>
+</h3>
+
+<blockquote>
+<p><strong>Command:</strong> /bible &lt;reference&gt;</p>
+
+<p><strong>Function:</strong> Returns a Bible verse. Results provided by biblia.com</p>
+
+<p><strong>Aliases:</strong> /b</p>
+</blockquote>
+
+<h3>
+<a id="urbandictionarylua" class="anchor" href="#urbandictionarylua" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>urbandictionary.lua</strong>
+</h3>
+
+<blockquote>
+<p><strong>Command:</strong> /urbandictionary &lt;query&gt;</p>
+
+<p><strong>Function:</strong> Returns the top definition from Urban Dictionary.</p>
+
+<p><strong>Aliases:</strong> /ud, /urban</p>
+</blockquote>
+
+<h3>
+<a id="timelua" class="anchor" href="#timelua" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>time.lua</strong>
+</h3>
+
+<blockquote>
+<p><strong>Command:</strong> /time &lt;query&gt;</p>
+
+<p><strong>Function:</strong> Returns the time, date, and timezone for a given location.</p>
+</blockquote>
+
+<h3>
+<a id="weatherlua" class="anchor" href="#weatherlua" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>weather.lua</strong>
+</h3>
+
+<blockquote>
+<p><strong>Command:</strong> /weather &lt;query&gt;</p>
+
+<p><strong>Function:</strong> Returns the current weather conditions for a given location.</p>
+</blockquote>
+
+<h3>
+<a id="nicklua" class="anchor" href="#nicklua" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>nick.lua</strong>
+</h3>
+
+<blockquote>
+<p><strong>Command:</strong> /nick &lt;nickname&gt;</p>
+
+<p><strong>Function:</strong> Set your nickname. Use "/nick -" to delete it.</p>
+</blockquote>
+
+<h3>
+<a id="whoamilua" class="anchor" href="#whoamilua" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>whoami.lua</strong>
+</h3>
+
+<blockquote>
+<p><strong>Command:</strong> /whoami</p>
+
+<p><strong>Function:</strong> Returns user and chat info for your or the replied-to message.</p>
+</blockquote>
+
+<h3>
+<a id="8balllua" class="anchor" href="#8balllua" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>8ball.lua</strong>
+</h3>
+
+<blockquote>
+<p><strong>Command:</strong> /8ball</p>
+
+<p><strong>Function:</strong> Returns an answer from a magic 8-ball.</p>
+</blockquote>
+
+<h3>
+<a id="dicelua" class="anchor" href="#dicelua" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>dice.lua</strong>
+</h3>
+
+<blockquote>
+<p><strong>Command:</strong> /roll &lt;nDr&gt;</p>
+
+<p><strong>Function:</strong> Returns RNG dice rolls. Uses D&amp;D notation.</p>
+
+<p><strong>Examples:</strong></p>
+
+<blockquote>
+<p>/roll 4D20</p>
+
+<p>/roll 6</p>
+</blockquote>
+</blockquote>
+
+<h3>
+<a id="redditlua" class="anchor" href="#redditlua" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>reddit.lua</strong>
+</h3>
+
+<blockquote>
+<p><strong>Command:</strong> /reddit [r/subreddit | query]</p>
+
+<p><strong>Function:</strong> Returns the top four or eight results, depending on whether it is run in a group chat or private message, from a given subreddit, query, or r/all.</p>
+
+<p><strong>Aliases:</strong> /r</p>
+
+<p><strong>Notes:</strong> You may also get results for a subreddit by entering "/r/subreddit".</p>
+
+<p><strong>Examples:</strong></p>
+
+<blockquote>
+<p>/reddit zelda</p>
+
+<p>/reddit r/gaming</p>
+
+<p>/r/talesfromtechsupport</p>
+</blockquote>
+</blockquote>
+
+<h3>
+<a id="xkcdlua" class="anchor" href="#xkcdlua" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>xkcd.lua</strong>
+</h3>
+
+<blockquote>
+<p><strong>Command:</strong> /xkcd [query]</p>
+
+<p><strong>Function:</strong> Returns an xkcd strip and it's alt text. If not query is given, it will use a random strip.</p>
+</blockquote>
+
+<h3>
+<a id="slaplua" class="anchor" href="#slaplua" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>slap.lua</strong>
+</h3>
+
+<blockquote>
+<p><strong>Command:</strong> /slap &lt;target&gt;</p>
+
+<p><strong>Function:</strong> Give someone a good slap (or worse).</p>
+</blockquote>
+
+<h3>
+<a id="commitlua" class="anchor" href="#commitlua" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>commit.lua</strong>
+</h3>
+
+<blockquote>
+<p><strong>Command:</strong> /commit</p>
+
+<p><strong>Function:</strong> Returns a commit message from whatthecommit.com.</p>
+</blockquote>
+
+<h3>
+<a id="fortunelua" class="anchor" href="#fortunelua" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>fortune.lua</strong>
+</h3>
+
+<blockquote>
+<p><strong>Command:</strong> /fortune</p>
+
+<p><strong>Function:</strong> Returns a UNIX fortune.</p>
+</blockquote>
+
+<h3>
+<a id="punlua" class="anchor" href="#punlua" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>pun.lua</strong>
+</h3>
+
+<blockquote>
+<p><strong>Command:</strong> /pun</p>
+
+<p><strong>Function:</strong> Returns a pun.</p>
+</blockquote>
+
+<h3>
+<a id="pokedexlua" class="anchor" href="#pokedexlua" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>pokedex.lua</strong>
+</h3>
+
+<blockquote>
+<p><strong>Command:</strong> /pokedex &lt;query&gt;</p>
+
+<p><strong>Function:</strong> Returns a Pokedex entry.</p>
+
+<p><strong>Aliases:</strong> /dex</p>
+</blockquote>
+
+<h3>
+<a id="currencylua" class="anchor" href="#currencylua" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>currency.lua</strong>
+</h3>
+
+<blockquote>
+<p><strong>Command:</strong> /cash [amount] &lt;from&gt; to &lt;from&gt;</p>
+
+<p><strong>Function:</strong> Converts an amount of one currency to another.</p>
+
+<p><strong>Examples:</strong></p>
+
+<blockquote>
+<p>/cash 5 USD to EUR</p>
+
+<p>/cash BTC to GBP</p>
+</blockquote>
+</blockquote>
+
+<h3>
+<a id="catslua" class="anchor" href="#catslua" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>cats.lua</strong>
+</h3>
+
+<blockquote>
+<p><strong>Command:</strong> /cat</p>
+
+<p><strong>Function:</strong> Returns a cat pic.</p>
+</blockquote>
+
+<h3>
+<a id="adminlua" class="anchor" href="#adminlua" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>admin.lua</strong>
+</h3>
+
+<blockquote>
+<p><strong>Command:</strong> /admin [command]</p>
+
+<p><strong>Function:</strong> Runs an admin command or returns a list of them.</p>
+
+<p><strong>Notes:</strong> Only usable by the configured admin.</p>
+</blockquote>
+
+<h3>
+<a id="blacklistlua" class="anchor" href="#blacklistlua" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>blacklist.lua</strong>
+</h3>
+
+<blockquote>
+<p><strong>Command:</strong> /blacklist [id]</p>
+
+<p><strong>Function:</strong> Blacklists or unblacklists the specified ID or replied-to user.</p>
+
+<p><strong>Notes:</strong> Only usable by the configured admin.</p>
+</blockquote>
+
+<h2>
+<a id="liberbot-plugins" class="anchor" href="#liberbot-plugins" aria-hidden="true"><span class="octicon octicon-link"></span></a>Liberbot Plugins</h2>
+
+<p>Some plugins are only useful when the bot is used in a Liberbot group: moderation.lua, antisquig.lua, floodcontrol.lua.</p>
+
+<p>floodcontrol.lua makes the bot compliant to Liberbot's bot floodcontrol. It should prevent your bot from being globally banned from Liberbot groups.</p>
+
+<p>moderation.lua allows realm administrators to assign moderators for a group. This only works if the bot is made a realm administrator.</p>
+
+<p>You must configure this plugin in the "moderation" section of config.lua, in the following way:</p>
+
+<pre><code>moderation = {
+    admins = {
+        ['123456789'] = 'Adam',
+        ['1337420'] = 'Eve'
+    },
+    admin_group = -8675309,
+    realm_name = 'My Realm'
+}
+</code></pre>
+
+<p>Where Adam and Eve are realm administrators, and their IDs are set as the keys in the form of strings. admin_group is the ID, a negative number, of the realm administration group. realm_name is the name as a string.</p>
+
+<p>Once this is set up, put the bot in the admin group and run /add and /modlist to get started.</p>
+
+<p>antisquig.lua is an extension to moderation.lua. It will automatically kick a user who posts Arabic script.</p>
+
+<h2>
+<a id="other-plugins" class="anchor" href="#other-plugins" aria-hidden="true"><span class="octicon octicon-link"></span></a>Other Plugins</h2>
+
+<p>There are other plugins not listed above: help.lua, about.lua, chatter.lua, greetings.lua.</p>
+
+<p>help.lua is self-explanatory. When the plugin loads, it compiles a list of commands, and will return them.</p>
+
+<p>about.lua returns the content of the about_text string in config.lua.</p>
+
+<p>chatter.lua will let the user interact with a chatterbot, if he replies to a message sent by the bot.</p>
+
+<p>greetings.lua is where things get tricky. It allows the bot to respond to several greetings with a preconfigured response. This is configured in the "greetings" section of config.lua:</p>
+
+<pre><code>greetings = {
+    ['Hello, #NAME.'] = {
+        'hello',
+        'hey',
+        'hi'
+    },
+    ['Goodbye, #NAME.'] = {
+        'goodbye',
+        'bye',
+    }
+}
+</code></pre>
+
+<p>Where the key is the preconfigured response (where #NAME will be replaced with the user's name or nickname) and the strings in the table are the expected greetings (followed by the bot's name and possible punctuation).</p>
 
 <h2>
 <a id="setup" class="anchor" href="#setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Setup</h2>
 
-<p>Requires Lua, lua-socket and lua-sec. <a href="http://github.com/LuaDist/dkjson/">dkjson</a> is provided. Written for Lua 5.2 but will probably run on 5.3.</p>
+<p>You <strong>must</strong> have lua-socket and lua-sec installed. For uploading photos and other files, you must have curl installed. The fortune.lua plugin requires that fortune is installed.</p>
 
-<p>You must have a Telegram bot and auth token from the <a href="http://telegram.me/botfather">BotFather</a> to run this bot. telegram-cli is not required.</p>
+<p>For weather.lua, lastfm.lua, and bible.lua to work, you must have API keys for openweathermap.org, last.fm, and biblia.com, respectively. cats.lua uses an API key to get more results, though it is not required.</p>
 
-<h3>
-<a id="configuration" class="anchor" href="#configuration" aria-hidden="true"><span class="octicon octicon-link"></span></a>Configuration</h3>
+<blockquote>
+<p><strong>Before you do anything, edit config.lua and make the following changes:</strong></p>
 
-<p>Most config.json entries are self-explanatory.</p>
+<ul>
+<li>Edit bot_api_key with your authentication token from Botfather.</li>
+<li>Set admin as your Telegram ID as a number.</li>
+</ul>
+</blockquote>
 
-<p>Add your bot API key, and other API keys if desirable.
-The plugins which require API keys that are not provided are disabled by default.
-The provided Giphy key is the public test key, and is subject to rate limitaton.</p>
+<p>You may also want to set your time_offset (a positive or negative number, in seconds, representing your computer's difference from UTC), your lang (lowercase, two-letter code representing your language), and modify your about_text. Some plugins will not be enabled by default, as they are for specific uses. If you want to use them, add them to the plugins table.</p>
 
-<p>TIME_OFFSET is the time difference, in seconds, between your system clock. It is sometimes necessary for accurate output of the time plugin. Default at 0 (duh).</p>
+<p>To start the bot, run</p>
 
-<p>"admins" table includes the ID numbers, as integers, of any privileged users. These will have access to the admin plugin and any addition privileged commands.</p>
+<p><code>./launch.sh</code></p>
 
-<p>"people" table is for the personality plugin:
-<code>"55994550": "topkecleon"</code></p>
+<p>To stop the bot, press Ctrl+C twice.</p>
 
-<p>ID number must be a string. The second string is the nickname to be given to the identified user when a personality greeting is triggered.</p>
-
-<p>To run:</p>
+<p>You may also start the bot manually with</p>
 
 <p><code>lua bot.lua</code></p>
+
+<p>though that will not cause it to automatically restart.</p>
 
 <h2>
 <a id="support" class="anchor" href="#support" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support</h2>
 
-<p>Please do not private message me for support. I will probably block you.</p>
+<p>Do not contact me through private messages for support.</p>
 
-<p>For support for otouto as well as general Lua and bot assistance, please join the <a href="http://telegram.me/joinchat/05fe39f500f8f1b2d1548147a68acd2a">CIS Bot Development</a> group. After you read the rules and the pastebin, I will assist you there.</p>
+<p>For otouto, bot, and other Lua support in general, join the Bot Development group. Send "/join 16314802" to <a href="https://telegram.me/liberbot">@Liberbot</a>. If this does not work the first time, you may need to send it up to seven more times, thanks to Telegram's automatic spam-prevention mechanism.</p>
+
+<h2>
+<a id="development" class="anchor" href="#development" aria-hidden="true"><span class="octicon octicon-link"></span></a>Development</h2>
+
+<p>Everyone is free to contribute to otouto. If you would like to write a plugin, here I will lay out various things that are important to know about the plugin system.</p>
+
+<p>Every plugin has four components, and half of them are optional: action, triggers, doc, cron.</p>
+
+<p>triggers is a table of strings using Lua patterns which, when matched by a message's text, will "trigger" the action function. This is not optional.</p>
+
+<p>action is the main function of a plugin. It accepts the "msg" table, which is all the components of the message, as an argument. This is not optional.</p>
+
+<p>doc is the documentation. The first line is the expected command and arguments. Arguments in square braces are considered optional and those in angled braces are considered required. This is optional.</p>
+
+<p>cron is a function run every five seconds. This is optional.</p>
+
+<p>The on_msg_receive function adds a few variables to the "msg" table: msg.from.id_str, msg.to.id_str, msg.text_lower. These are self-explanatory and make code a lot neater.</p>
+
+<p>Return values from the action function are optional, but when they are used, they determine the fate of the message. When false/nil is returned, on_msg_receive stops and the script moves on to waiting for the next message. When true is returned, on_msg_receive continues going through the plugins for a match. When a table is returned, that table becomes the "msg" table, and on_msg_receive continues.</p>
+
+<p>When a plugin action or cron function fails, the script will catch the error and print it, and, if applicable, the text which triggered the plugin, and continue.</p>
+
+<hr>
+
+<p>Interactions with the Telegram bot API are straightforward. Every function is named the same as the API method it utilizes. The order of expected arguments is laid out in bindings.lua.</p>
+
+<p>There are three functions which are not API methods: sendRequest, curlRequest, and sendReply. The first two are used by the other functions. sendReply is used directly. It expects the "msg" table as its first argument, and a string of text as its second. It will send a reply without image preview to the initial message.</p>
+
+<hr>
+
+<p>Several functions and methods used by multiple plugins and possibly the main script are kept in utilities.lua. Refer to that file for documentation.</p>
+
+<hr>
+
+<p>otouto uses dkjson, a pure-Lua JSON parser. This is provided with the code and does not need to be downloaded or installed separately.</p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/topkecleon/otouto">otouto</a> is maintained by <a href="https://github.com/topkecleon">topkecleon</a>.</span>
@@ -227,4 +548,3 @@ The provided Giphy key is the public test key, and is subject to rate limitaton.
   
   </body>
 </html>
-
