@@ -1,12 +1,12 @@
 return {
-	bot_api_key = '',
+	bot_api_key = '161579222:AAFHcfSzxPQ1Ju1-UEkRE3wiWLFOh6ZsDmI',
 	lastfm_api_key = '',
 	owm_api_key = '',
 	biblia_api_key = '',
 	thecatapi_key = '',
 	time_offset = 0,
 	lang = 'en',
-	admin = 00000000,
+	admin = 122662162,
 	about_text = [[
 I am otouto, the plugin-wielding, multi-purpose Telegram bot written by topkecleon.
 
@@ -55,7 +55,7 @@ telegram.me/otouto
 	},
 	moderation = {
 		admins = {
-			['00000000'] = 'You'
+			['122662162'] = 'hamed-max'
 		},
 		admin_group = -00000000,
 		realm_name = 'My Realm'
