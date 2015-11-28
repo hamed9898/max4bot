@@ -1,5 +1,5 @@
 return {
-	bot_api_key = '161579222:AAFHcfSzxPQ1Ju1-UEkRE3wiWLFOh6ZsDmI',
+	bot_api_key = '131840449:AAEPrE6hQ4cc-cY824MTa5Bwu03DloqeH5M',
 	lastfm_api_key = '',
 	owm_api_key = '',
 	biblia_api_key = '',
